@@ -1,27 +1,28 @@
+* {
+  box-sizing: border-box;
+}
+
 :root {
   --accent-color: #00acdc;
 }
 
-.page {
-  font-family: Roboto, sans-serif;
-}
-
-.page__body {
+body {
   margin: 0;
+  font-family: Roboto, sans-serif;
 }
 
 .header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding-inline: 50px;
+  justify-content: space-between;
+  padding: 0 50px;
 }
 
-.logo {
+.header__logo-link {
   display: flex;
 }
 
-.logo__image {
+.header__logo {
   display: block;
   width: 40px;
   height: 40px;
@@ -46,6 +47,7 @@
   position: relative;
   display: flex;
   align-items: center;
+  justify-content: center;
   height: 60px;
   color: #000;
   font-size: 12px;
@@ -59,17 +61,17 @@
   color: var(--accent-color);
 }
 
-.is-active {
+.nav__link.is-active {
   color: var(--accent-color);
 }
 
-.is-active::after {
+.nav__link.is-active::after {
   content: '';
   position: absolute;
   right: 0;
   bottom: 0;
   left: 0;
   height: 4px;
-  background-color: var(--accent-color);
   border-radius: 8px;
+  background-color: var(--accent-color);
 }
