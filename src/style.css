@@ -20,6 +20,8 @@ body {
 
 .header__logo-link {
   display: flex;
+  align-items: center;
+  text-decoration: none;
 }
 
 .header__logo {
@@ -61,11 +63,11 @@ body {
   color: var(--accent-color);
 }
 
-.nav__link.is-active {
+.is-active {
   color: var(--accent-color);
 }
 
-.nav__link.is-active::after {
+.is-active::after {
   content: '';
   position: absolute;
   right: 0;
